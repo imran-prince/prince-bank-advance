@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking site</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <h1 class="text-center font-bold text-5xl my-16	">Let's Get some <span class=text-purple-700>
+        Moooooney !!!
+</span></h1>
+<main class="w-3/4 mx-auto">
+    <section>
+        <div class="grid grid-cols-3 gap-5  text-white">
+            <div class="bg-green-300 p-8 rounded-md" >
+                <h1 class="text-2xl">Deposit</h1>
+                <h2 class="text-4xl">$<span id="curentdeposit">00</span></h2>
+            </div>
+            <div class="bg-purple-300 p-8 rounded-md" >
+                <h1 class="text-2xl">Widraw</h1>
+                <h2 class="text-4xl">$<span id="widraw">00</span></h2>
+            </div>
+            <div class="bg-yellow-300 p-8 rounded-md" >
+                <h1 class="text-2xl">Balance</h1>
+                <h2 class="text-4xl">$ <span id="blance">500</span></h2>
+            </div>
+              
+          </div>
+    </section>
+    <section class="mt-8">
+        <div class="grid grid-cols-2">
+            <div class="bg-blue-300 w-5/6  mx-auto p-8">
+                <h2 class="text-2xl mx-5 mb-5 font-semibold text-3xl">Plaease Deposit</h2>
+                <input id="deposit-field" type="text" placeholder="$ Please Deposit amount" class="block mx-5 border rounded-md w-3/4 mb-4 px-2">
+                <button class="bg-amber-600 px-3  py-2 rounded-md text-white font-semibold mx-5" id="deposit-btn">Deposit</button>
+            </div>
+            <div class="bg-pink-300  w-5/6   mx-auto p-8">
+                <h2 class="text-2xl mx-5 mb-5 font-semibold text-3xl">Widraw </h2>
+                <input id="widraw-field" type="text" placeholder="$ widaw amount" class="block mx-5 border rounded-md w-3/4 mb-4 px-2">
+                <button class="bg-amber-600 px-3  py-2 rounded-md text-white font-semibold mx-5" id="widraw-btn">Widraw</button>
+            </div>
+        </div>
+    </section>
+    <script src="js/banking.js"></script>
+
+</main>
+    
+</body>
+</html>
